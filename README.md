@@ -19,7 +19,7 @@ vault write secret/db2-sample spring.datasource.url=jdbc:db2://localhost:50000/S
 - Step Three: Run the application
 
 ```bash
-mvnw spring-boot:run
+./mvnw spring-boot:run
 ```
 
 

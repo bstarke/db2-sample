@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    password: "db2inst1-pwd"
+    url: "jdbc:db2://localhost:50000/SAMPLE"
+    username: "db2inst1"
+    hikari:
+      connection-test-query: "SELECT 1 FROM sysibm.sysdummy1 WITH UR"

@@ -80,8 +80,19 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>pl.project13.maven</groupId>
+				<artifactId>git-commit-id-plugin</artifactId>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>build-info</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
@@ -97,6 +108,7 @@
 		</repository>
 		<repository>
 			<id>mvnrepo</id>
+			<name>for db2 driver</name>
 			<url>https://artifacts.alfresco.com/nexus/content/repositories/public</url>
 		</repository>
 	</repositories>

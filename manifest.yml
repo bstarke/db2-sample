@@ -1,0 +1,11 @@
+applications:
+- name: db2sample
+  stack: cflinuxfs2
+  disk_quota: 512M
+  instances: 1
+  memory: 1G
+  path: target/db2-sample-0.0.1-SNAPSHOT.jar
+  routes:
+  - route: db2sample.local.pcfdev.io
+  services:
+  - vault

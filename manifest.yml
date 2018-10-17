@@ -9,3 +9,4 @@ applications:
   - route: db2sample.local.pcfdev.io
   services:
   - vault
+  - config

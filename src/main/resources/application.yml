@@ -1,3 +1,10 @@
+spring:
+  application:
+    name: "db2sample"
+  datasource:
+    driver-class-name: "com.ibm.db2.jcc.DB2Driver"
+    hikari:
+      connection-test-query: "SELECT 'world' FROM sysibm.sysdummy1 WITH UR"
 management:
   endpoint:
     health:
